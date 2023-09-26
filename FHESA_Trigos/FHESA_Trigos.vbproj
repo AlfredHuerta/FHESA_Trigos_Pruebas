@@ -1,0 +1,597 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>4BF01F6117B83DF6585F6D7DB7297A670E631CB6</ManifestCertificateThumbprint>
+    <PublishUrl>Inst_Trigos\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <UpdateUrl>http://localhost/FHESA_Trigos/</UpdateUrl>
+    <ApplicationRevision>11</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>FHESA_Trigos_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{07CFDEAB-597F-46A0-A158-E09C4992358C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>FHESA_Trigos.My.MyApplication</StartupObject>
+    <RootNamespace>FHESA_Trigos</RootNamespace>
+    <AssemblyName>Logística de Trigos</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Logística de Trigos.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Logística de Trigos.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DocumentationFile>Logística de Trigos.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DocumentationFile>Logística de Trigos.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DocumentationFile>Logística de Trigos.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DocumentationFile>Logística de Trigos.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>ico_programa 001.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Design">
+      <HintPath>..\dll\CrystalDecisions.CrystalReports.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\dll\CrystalDecisions.CrystalReports.Engine.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\dll\CrystalDecisions.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\dll\CrystalDecisions.Windows.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmAcercade.Designer.vb" />
+    <Compile Include="frmAcercade.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAcercade1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>frmAcercade.resx</DependentUpon>
+    </Compile>
+    <Compile Include="frmAjuste.Designer.vb">
+      <DependentUpon>frmAjuste.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAjuste.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBloqueadorPantalla.Designer.vb">
+      <DependentUpon>frmBloqueadorPantalla.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBloqueadorPantalla.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBusqueda.Designer.vb">
+      <DependentUpon>frmBusqueda.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBusqueda.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCambioContrasenia.Designer.vb">
+      <DependentUpon>frmCambioContrasenia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCambioContrasenia.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCargadorMasivoEmb.Designer.vb">
+      <DependentUpon>frmCargadorMasivoEmb.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCargadorMasivoEmb.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConexionSql.Designer.vb">
+      <DependentUpon>frmConexionSql.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmConexionSql.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConfiguracion.Designer.vb">
+      <DependentUpon>frmConfiguracion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmConfiguracion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDestino.Designer.vb">
+      <DependentUpon>frmDestino.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmDestino.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEmbarque.Designer.vb">
+      <DependentUpon>frmEmbarque.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmEmbarque.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFacturaFlete.Designer.vb">
+      <DependentUpon>frmFacturaFlete.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmFacturaFlete.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHistorial.Designer.vb">
+      <DependentUpon>frmHistorial.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmHistorial.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLote.Designer.vb">
+      <DependentUpon>frmLote.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmLote.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOperador.Designer.vb">
+      <DependentUpon>frmOperador.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmOperador.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOrden.Designer.vb">
+      <DependentUpon>frmOrden.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmOrden.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOrigen.Designer.vb">
+      <DependentUpon>frmOrigen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmOrigen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPerfil.Designer.vb">
+      <DependentUpon>frmPerfil.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPerfil.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrincipal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrincipal.Designer.vb">
+      <DependentUpon>frmPrincipal.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProveedor.Designer.vb">
+      <DependentUpon>frmProveedor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmProveedor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReportes.Designer.vb">
+      <DependentUpon>frmReportes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmReportes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSesion.Designer.vb">
+      <DependentUpon>frmSesion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSesion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTrigo.Designer.vb">
+      <DependentUpon>frmTrigo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTrigo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUbicacionTmp.Designer.vb">
+      <DependentUpon>frmUbicacionTmp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmUbicacionTmp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUsuario.Designer.vb">
+      <DependentUpon>frmUsuario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmUsuario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVenta.Designer.vb">
+      <DependentUpon>frmVenta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmVenta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVisorEventos.Designer.vb">
+      <DependentUpon>frmVisorEventos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmVisorEventos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVisorInforme.Designer.vb">
+      <DependentUpon>frmVisorInforme.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmVisorInforme.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frmAcercade.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>frmAcercade1.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAjuste.resx">
+      <DependentUpon>frmAjuste.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBloqueadorPantalla.resx">
+      <DependentUpon>frmBloqueadorPantalla.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBusqueda.resx">
+      <DependentUpon>frmBusqueda.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCambioContrasenia.resx">
+      <DependentUpon>frmCambioContrasenia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCargadorMasivoEmb.resx">
+      <DependentUpon>frmCargadorMasivoEmb.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConexionSql.resx">
+      <DependentUpon>frmConexionSql.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConfiguracion.resx">
+      <DependentUpon>frmConfiguracion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDestino.resx">
+      <DependentUpon>frmDestino.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEmbarque.resx">
+      <DependentUpon>frmEmbarque.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFacturaFlete.resx">
+      <DependentUpon>frmFacturaFlete.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHistorial.resx">
+      <DependentUpon>frmHistorial.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLote.resx">
+      <DependentUpon>frmLote.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOperador.resx">
+      <DependentUpon>frmOperador.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOrden.resx">
+      <DependentUpon>frmOrden.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOrigen.resx">
+      <DependentUpon>frmOrigen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPerfil.resx">
+      <DependentUpon>frmPerfil.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrincipal.resx">
+      <DependentUpon>frmPrincipal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProveedor.resx">
+      <DependentUpon>frmProveedor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReportes.resx">
+      <DependentUpon>frmReportes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSesion.resx">
+      <DependentUpon>frmSesion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTrigo.resx">
+      <DependentUpon>frmTrigo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUbicacionTmp.resx">
+      <DependentUpon>frmUbicacionTmp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUsuario.resx">
+      <DependentUpon>frmUsuario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVenta.resx">
+      <DependentUpon>frmVenta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVisorEventos.resx">
+      <DependentUpon>frmVisorEventos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVisorInforme.resx">
+      <DependentUpon>frmVisorInforme.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="FHESA_Trigos_TemporaryKey.pfx" />
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+    <Content Include="ico_programa 001.ico" />
+    <Content Include="img\logo_FHESA.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\lotes.png" />
+    <None Include="Resources\ordenes.png" />
+    <None Include="Resources\embarques 02.png" />
+    <None Include="Resources\ajustes.png" />
+    <None Include="Resources\ventas_02.png" />
+    <None Include="Resources\nuevo.png" />
+    <None Include="Resources\buscar.png" />
+    <None Include="Resources\cerrar.png" />
+    <None Include="Resources\cancelar 02.png" />
+    <None Include="Resources\primero.png" />
+    <None Include="Resources\atras.png" />
+    <None Include="Resources\adelante.png" />
+    <None Include="Resources\ultimo.png" />
+    <None Include="Resources\historial.png" />
+    <None Include="Resources\configuracion.png" />
+    <None Include="Resources\usuarios.png" />
+    <None Include="Resources\cambio_contrasena.png" />
+    <None Include="Resources\trigos.png" />
+    <None Include="Resources\proveedores.png" />
+    <None Include="Resources\origenes.png" />
+    <None Include="Resources\destinos.png" />
+    <None Include="Resources\operadores.png" />
+    <None Include="Resources\reportes.png" />
+    <None Include="Resources\imprimir.png" />
+    <None Include="Resources\log_trig 003.png" />
+    <None Include="Resources\log_trig 0031.png" />
+    <None Include="Resources\log_trig 001.png" />
+    <None Include="Resources\bd.png" />
+    <None Include="Resources\editar.png" />
+    <None Include="Resources\Ubicacion.ico" />
+    <Content Include="rpt\Dummy.rpt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="rpt\Rtrigos.rpt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="rpt\Rtrigoemb.rpt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="rpt\Rprvflt.rpt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="rpt\Rembpend1.rpt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="rpt\Rembpend2.rpt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="rpt\Rembsin4.rpt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="rpt\Rlabprov.rpt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="rpt\Roperador.rpt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="rpt\Rsilo.rpt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="rpt\Rajve.rpt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="rpt\Rtrigorec.rpt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="rpt\Rinstrsp.rpt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="rpt\Rinprtrg.rpt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="rpt\RvistaimpAjustes.rpt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="rpt\RvistaimpEmb.rpt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="rpt\RvistaimpLote.rpt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="rpt\RvistaimpOrden.rpt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="rpt\RvistaimpCtocmpvta.rpt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="rpt\RvistaimpVentas.rpt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="rpt\Rembins.rpt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Genericas\Genericas.vbproj">
+      <Project>{a2c7c830-d3a6-4452-83b4-fe0315417c7f}</Project>
+      <Name>Genericas</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ObjEntidades\ObjEntidades.vbproj">
+      <Project>{6c4b9e4b-6520-4d64-afc7-9266f42fc30c}</Project>
+      <Name>ObjEntidades</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

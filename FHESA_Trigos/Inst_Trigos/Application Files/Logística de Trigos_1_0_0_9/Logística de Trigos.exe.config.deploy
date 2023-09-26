@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+    <configSections>
+        <sectionGroup name="userSettings" type="System.Configuration.UserSettingsGroup, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+            <section name="FHESA_Trigos.My.MySettings" type="System.Configuration.ClientSettingsSection, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" allowExeDefinition="MachineToLocalUser" requirePermission="false"/>
+        </sectionGroup>
+    </configSections>
+    <startup>
+        <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.5"/>
+    </startup>
+    <userSettings>
+        <FHESA_Trigos.My.MySettings>
+            <setting name="Servidor" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="login" serializeAs="String">
+                <value>usrtrg</value>
+            </setting>
+            <setting name="contrasenia" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="BaseDatos" serializeAs="String">
+                <value>TNLTRG</value>
+            </setting>
+            <setting name="TiempoEspera" serializeAs="String">
+                <value>30</value>
+            </setting>
+            <setting name="Nkname" serializeAs="String">
+                <value />
+            </setting>
+        </FHESA_Trigos.My.MySettings>
+    </userSettings>
+</configuration>
